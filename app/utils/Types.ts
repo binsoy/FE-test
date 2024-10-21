@@ -1,7 +1,14 @@
+export enum CARDINAL_DIRECTION {
+  NORTH = "north",
+  SOUTH = "south",
+  EAST = "east",
+  WEST = "west"
+};
+
 export interface Position {
   row?: number;
   col?: number;
-  direction?: 'north' | 'south' | 'east' | 'west';
+  direction?: CARDINAL_DIRECTION;
 }
 
 export interface GridPropTypes {
@@ -10,5 +17,11 @@ export interface GridPropTypes {
 
 export interface AlertPropTypes {
   error: boolean;
-  message?: string;
+  message: string;
+}
+
+export interface ValidationReturnTypes {
+  invalid: boolean;
+  message: string;
+  position: Position;
 }
