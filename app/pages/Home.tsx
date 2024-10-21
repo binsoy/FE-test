@@ -15,7 +15,7 @@ const Home: React.FC = () => {
   return (
       <Box sx={{ p: 2 }}>
         <InputField inputChange={inputChangeCallback} />
-        <TheGrid position={position}/>
+        <TheGrid position={position} />
       </Box>
   );
 };
